@@ -1,5 +1,4 @@
-// import paintings from "../paintings.json";
-import defaultImage from "../default.jpg";
+import defaultImage from "./default.jpg";
 import PropTypes from "prop-types";
 function Painting({
   imageUrl = defaultImage,
