@@ -1,5 +1,6 @@
 import defaultImage from "./default.jpg";
 import PropTypes from "prop-types";
+import s from "./Painting.module.css";
 function Painting({
   imageUrl = defaultImage,
   title,
@@ -9,7 +10,7 @@ function Painting({
   quantity,
 }) {
   return (
-    <div>
+    <div className={s.container}>
       <img src={imageUrl ?? defaultImage} alt={title} width="480" />
       <h2>{title}</h2>
       <p>
